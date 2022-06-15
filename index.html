@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MemeGen</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body onload="init()">
+    <header class="main-header flex align-center space-between">
+      <img src="logo/logo.png" class="logo" />
+
+      <ul class="main-nav flex clean-list">
+        <li><a href="#" onclick="toggleView()">gallery</a></li>
+        <li>|</li>
+        <li><a href="#about">about</a></li>
+        <li>|</li>
+        <li><a href="#">your memes</a></li>
+      </ul>
+    </header>
+
+    <main class="main-continer">
+      <div class="search-bar"></div>
+      <!-- add search bar -->
+
+      <section class="gallery-continer">
+        <div class="gallery img-grid">
+          <!-- js render -->
+        </div>
+      </section>
+    
+        
+
+        <section class="meme hidden">
+          <div class="meme-container">
+            <canvas class="meme-canvas">
+              Your browser does not support the HTML5 canvas tag.
+            </canvas>
+
+            <div class="meme-editor">
+              <!-- js render -->
+            </div>
+          
+        </section>
+      </div>
+    </main>
+
+    <footer id="about" class="footer flex center align-center">
+      <img src="logo/logo.png" class="logo" />
+      <p>all right reserved</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="img.service.js"></script>
+  </body>
+</html>
